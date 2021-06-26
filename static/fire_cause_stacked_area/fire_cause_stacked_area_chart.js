@@ -14,7 +14,7 @@ var svg = d3.select(".Causes_vis")
             "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
-  d3.csv("static/data/data_stackedBarChart.csv", function(data) {
+  d3.csv("/data/data_stackedBarChart.csv", function(data) {
   // List of groups = header of the csv files
   var keys = data.columns.slice(1);
 
