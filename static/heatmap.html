@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Wildfire Visualization Project</title>
+    <!--link rel="stylesheet" type="text/css" href="style.css" /-->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bumbeishvili/d3-tip-for-v6@4/d3-tip.min.css">
+    <script src="https://unpkg.com/topojson@3"></script>
+    <!-- semantic UI -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <ARTicle>
+        <section style="margin-bottom: 40px;margin-top: 30px;margin-left: 450px;">
+            <button class="ui left labeled icon button" id="pre">
+                <i class="left arrow icon"></i>
+                Previous
+            </button>
+            <button class="ui labeled icon button" id="play">
+                <i class="pause icon"></i>
+                <span id="isPlay">Play</span>
+                <span id="year">1992</span>
+            </button>
+            <button class="ui right labeled icon button" id="next">
+                <i class="right arrow icon"></i>
+                Next
+            </button>
+        </section>
+
+        <section style="display: flex;">
+            <div id="map">
+
+            </div>
+            <div id="bar">
+
+            </div>
+        </section>
+
+        <script src="./heatmap/index.js"></script>
+    </ARTicle>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+#tilemap-svg{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#tilemap-svg * .tile:hover{
+    cursor: pointer;
+
+}
+.zoomPlot{
+    fill: #dedede;
+}
+#tilemap-svg * .tile > rect{ 
+    fill: #dedede;
+    opacity: 0.8;
+}
+#tilemap-svg *.tile:hover > rect{ 
+    fill: #bababa;
+}
+#tilemap-svg *.areaPath:hover{ 
+    fill: #bababa !important;
+}
+#tilemap-svg *.detailView.plot{
+    background-color: white;
+}
+
+#tilemap-svg *.tile.selected rect{
+    fill: #999999;
+}
+#tilemap-svg *.filter {
+    cursor: pointer;
+}
+#tilemap-svg *.hoverText{
+    font-size: 10px;
+    fill: black;
+}
+
+#tilemap-svg *.stateName{
+    font-size: 25px;
+    fill: black;
+}
+
+
+#tilemap-svg *.zoomPlotTitle{
+    font-size: 15px;
+    fill: black;
+}
+
+#tilemap-svg *.zoomPlotSubTitle{
+    font-size: 8px;
+    fill: black;
+}
+#tilemap-svg *.filter text {
+    font-size: 11px;
+    font-weight: normal;
+    fill: #333;
+}
+#tilemap-svg *.tilemapLegend{
+    font-size: 10px;
+}
+#tilemap-svg *.filter rect{
+    fill: #ddd;
+}
+
+#tilemap-svg *.filter.selected text {
+    fill: #fff;
+}
+
+#tilemap-svg *.filter.selected rect {
+    fill: #fe902b;
+}
+
+
+#tilemap-svg *.axis path,.axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+  }
+  
+  #tilemap-svg *.line {
+    fill: none;
+    stroke: #6F257F;
+    stroke-width: 5px;
+  }
+  
+  #tilemap-svg *.overlay {
+    fill: none;
+    pointer-events: all;
+  }
+  
+  #tilemap-svg *.focus circle {
+    fill: white;
+    stroke-width: 2px;
+  }
+    
+  #tilemap-svg *.hover-line {
+    stroke-width: 1px;
+    stroke-dasharray: 2,1;
+  }
+
+  #tilemap-svg *.miniAxis {
+    font-size: 7px;
+  }
+
+   #tilemap-svg *.axis {
+    font-size: 7px;
+  }

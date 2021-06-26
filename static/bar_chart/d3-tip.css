@@ -1,0 +1,89 @@
+/**
+ * Minified by jsDelivr using clean-css v4.2.3.
+ * Original file: /gh/bumbeishvili/d3-tip-for-v6@4/d3-tip.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+ 
+ #barChart-svg * .d3-tip{
+    line-height: 1;
+    padding: 6px;
+    
+    color: #333;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color    : rgb(82, 60, 143);
+  }
+  
+  /* Creates a small triangle extender for the tooltip */
+  
+  #barChart-svg * .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(39, 65, 182, 0.95);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+    background    : rgb(82, 60, 143);
+  }
+  
+  /* Style northward tooltips specifically */
+  
+  #barChart-svg * .d3-tip.n:after {
+    margin: -2px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+  
+  
+  #barChart-svg * .d3-tip h5{
+    font-size: 26px;
+    font-weight: 600;
+    margin: 2px 10px 4px 2px;
+  }
+  
+  
+  #barChart-svg * .d3-tip thead td {
+    border-bottom: 1px solid #ccc;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  
+  
+  #barChart-svg * .d3-tip td {
+    padding: 2px 10px 2px 2px;
+  }
+  
+  
+  #barChart-svg * .d3-tip thead tr {
+    padding-top: 10px;
+  }
+
+
+  .toolTipBar {
+    width: 120px;
+    background-color: #fff;
+    color: rgb(7, 7, 7);
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .toolTipBar::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }

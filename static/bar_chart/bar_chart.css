@@ -1,0 +1,123 @@
+
+body{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+  }
+  
+  svg{
+    margin-top: 5px;
+    /*border: 1px solid #ccc;*/
+  }
+  
+  text{
+    font-weight: 300;
+  }
+  
+  .tooltiptext {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+ 
+  #barChart-svg * .body{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+  }
+  
+  #barChart-svg * .svg{
+    margin-top: 5px;
+    /*border: 1px solid #ccc;*/
+  }
+  
+  #barChart-svg * .text{
+    font-weight: 300;
+  }
+  
+  #barChart-svg * .axis,
+  #barChart-svg * .frame {
+    shape-rendering: crispEdges;
+  }
+  
+  #barChart-svg * .axis line {
+    stroke: #ddd;
+  }
+  
+  #barChart-svg * .axis path {
+    display: none;
+  }
+  #barChart-svg * .lineChart {
+    fill-opacity: .7;
+  }
+  
+  #barChart-svg * .lineChart.hidden {
+    stroke: rgb(54, 86, 228);
+    fill-opacity: .2;
+  }
+  
+  
+  #barChart-svg * .axis .axis-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-anchor: middle;
+    fill: #555;
+  }
+  
+  
+  #barChart-svg * .frame {
+    fill: none;
+    stroke: #aaa;
+  }
+  
+  
+  #barChart-svg * rect {
+    fill-opacity: .7;
+  }
+  
+  #barChart-svg * .dot {
+    fill-opacity: .7;
+  }
+  
+  #barChart-svg * .dot.hidden {
+    fill: rgb(226, 120, 93) !important;
+    fill-opacity: .2;
+  }
+  
+  
+  #barChart-svg * .dot:hover {
+    fill: rgb(238, 162, 143) !important;
+    fill-opacity: 1;
+  }
+  
+  #barChart-svg * body {
+      font-family: "Open Sans";
+      margin: 0;
+  }
+  
+  
+  #barChart-svg * label {
+      font-size: 13px;
+  }
+  
+  
+  #barChart-svg * #main {
+      margin: 20px;
+  }

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wildfire Visualization Project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="section Introduction centerInfo" >
+            <a id ="begin"></a>
+            <h1>Wildfires in the United States</h1>
+            <h3>Visualizing 24 years of wildfire data</h3>
+            <h4>Phoebe Moh, Shruti Bidwalkar, Shreya Suresh, Jiaxuan (Mary) Wu
+                </h4>
+        </div>
+        <hr/>
+        <div class="section Introduction">
+            <div class="center">
+                <h2>Remember the last time you had a bonfire? </h2>
+            </br>
+                <iframe src="https://giphy.com/embed/g4Op234Q28w0TA8n56" width="300" height="300"  frameBorder="100" class="giphy-embed"></iframe>
+            </div>    
+            <div class="centerInfo">
+            <div class="info">
+                Being around family and friends while roasting marshmellows in the cold weather sounds like a pleasant holiday night 
+                for most of us. Fires such as these fall under the controlled fires category.
+                Contolled fires are good - they provide warmth, light, and means for cooking food among other things.
+                 But what happens when things start to become <span class="headingHighlight">uncontrolled?</span> 
+                 <br/><br/>
+                 A recent report from the Intergovernmental Panel on 
+                 Climate Change has determined that dramatic and rapid changes to the global economy are required in order to
+                  avoid increasing climate-related risks for natural and human systems.
+                <br/><br/>
+                Through our visualizations, we aim to tell the truth about the status quo with regard to wildfires in the
+                 United States of America. First, we present aggregated national data through many separate visualizations, 
+                 each with lightweight interactions, to give the user an overview of the data. Then, we present a visualization
+                  with many interactions to enable the user to drill down and explore the data by state. Finally, we guide the 
+                  user to resources they could use to make a difference.
+            </div><br/>
+            </div>
+        </div>
+        <div class="section Overview">
+            <h2>How has <span class="headingHighlight">amount</span> of land burned in a year changed?</h2>
+                <div class="info">
+                    Use this tool to explore how the total number of acres burned changed over years.
+                    You can explore the total area burned in both state level (left) and national level (right). <br/>
+                    <span class="headingHighlight">Play</span> the animation to see the changes over years.
+                    <span class="headingHighlight">Click</span> the Next or Previous button to the years you want to see. 
+                    <span class="headingHighlight">Hover</span> over the map or bar to get the number of total acres burned. <br/>
+                    <span class="headingHighlight">Darker</span> color represents a larger area burned.
+                </div><br/>
+                <div class="center">
+                    <iframe src="heatmap.html" width="1300" height="550" frameBorder="0" scrolling="no"></iframe>
+                </div>
+                The total area burned of US fluctuates from year to year, but the overall trend is <span class="headingHighlight">upward</span>. 
+                The data seems to fluctuate periodically, with widespread fires occurring every year or two.<br/>
+                From 1992 to 2015, fires were mainly concentrated in the <span class="headingHighlight">West</span> and <span class="headingHighlight">South</span>, and the fire area was also relatively large. 
+                Such as Texas, California, Alaska, and Idaho.
+                The western and southern states account for a very large share of the total area burned in the United States.<br/>
+            <br/>
+        </div>
+        <div class="Severity">
+            <div class="section Severity_vis">
+                <class class="Severity_div1">
+                    <h2>How has the <span class="headingHighlight">degree</span>  of fires distributed among years?</h2>
+                </class>
+                <div class="info">
+                    This visualization helps to understand the distribution of fires at different classes and the number of fires at different classes. 
+                    The fire level is divided into 7 levels, from A to G, representing the area burned from small to large. 
+                    The linear distribution cannot perfectly show the distribution of fire size classes and the number of fires at each class, 
+                    since the area burned of class A is extremely small and the area burned of class G is extremely large.  
+                    Therefore, we decided to use log (base 10) to narrow the gap between A and G, so that we could better see the distribution of fires at different levels and how many they occurred.<br/>
+                </div><br/>
+                <!--div class="center"-->
+                    <iframe src="scatterplot1.png" width="1200" height="625" frameBorder="0" scrolling="no"></iframe>
+                <!--/div-->
+                We used the whole data from 1992 to 2015 to plot this scatterplot. 
+                Each point in the plot represents a fire event, with different colors representing its class. 
+                The horizontal axis is the date it occurred, and the vertical axis is its acres burned. 
+                We can clearly see that as fires grow in size, the occurrence of fires become less frequent (extremely dense at class A and B, more sparse at class F and G).
+                Therefore, lower fire size classes tend to happen more often and higher fire size classes tend to happen less often.            
+            </div>
+                <div class="section Severity_div2">
+                    <h2>How <span class="headingHighlight">big</span> are fires?</h2><br/>
+                    <div class="text">Do you know how big an acre is?  How big 100 acres are?  How about 1 million acres?</div>
+                    <br/>
+                    <div class="info">
+                        Use this tool to explore how different fire size classes compare to everyday objects.
+                        <span class="headingHighlight">Drag</span> the slider to the class you want to see or 
+                        <span class="headingHighlight">play</span> the animation to see the comparision for all classes.
+                    </div><br/>
+                    <iframe src="slider.html" width="1200" height="550" frameBorder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="Causes">
+            <div class="section Causes_1">
+                <h2>What are the <span class="headingHighlight">causes</span> of the most destructive fires?</h2>
+                <div class="info">
+                    Only the top 1% of most destuctive fires (defined by the number of acres burned) for a given year are shown in this plot.
+                    Fire causes have been sorted by number of fires represented in this plot.
+                </div><br/>
+                <iframe src="bubble_plot.html" width="1200" height="500" frameBorder="0"></iframe>
+                <div class="text">
+                    While lightning strikes are a prevalent cause for fires, many of the most destructive fires
+                    have man-made origins.  These include fires triggered by arson, equipment use, and campfires.
+                </div>
+            </div>
+        
+            <div class="section Causes_vis">
+                <div class="info">
+                    The number of fires across all the states in the US for each cause is shown in this plot. 
+                    <span class="headingHighlight">Hover</span> over the legend to highlight the region in the graph corresponding to each cause.
+                    <span class="headingHighlight">Zoom</span> on a specific time frame through brushing. <span class="headingHighlight">Double click</span> 
+                    to unzoom. 
+                    <br/> 
+                    The dominating causes are Lightening and Arson. It is interesting to note that one of them is natural while the other is triggered by 
+                    humans. 
+                </div><br/>
+                <iframe src="fire_cause_stacked_area.html" width="1700" height="600" frameBorder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="section Containment">
+            
+                <h2>How have the <span class="headingHighlight">effects</span> of the fires changed over the years at a national scale?</h2>
+                <div class="info">
+                    This visualization helps to explore how the wildfires have affected the federal spending, time to contain the fires and 
+                    area incinerated at a national scale over the years. 
+                    <span class="headingHighlight">Hover</span> to get the information about a year or 
+                    <span class="headingHighlight">Brush</span> to select multiple bars within an area to see the trends.
+                      
+                      </div></br>
+                      <div class="barChartWrapper">
+                        <iframe src="bar_chart.html" width="1000" height="500" frameBorder="0"></iframe></div>
+            <br/>
+            <div class="text">
+                The moving average line (average of 3 years) shows that the all the above mentioned 
+                quantities show an upward trend. The wildfires are affecting the national resources such as land and taxpayer's money at a greater extent each year. 
+                More time and effort is also required each year to contain these wildfires which lead to heavy losses.
+            </div><br/>
+           
+           
+        </div>
+        <div class="section Exploration">
+            <h2>How do different states <span class="headingHighlight">compare</span>?</h2>
+            <div class="info">
+                Use this tool to explore how different states measure up.  <span class="headingHighlight">Select</span> a data attribute to view by and 
+                <span class="headingHighlight">click</span> different tiles to bring up detailed metrics for each state. <br/><br/>
+                All states are drawn on the same scale unless otherwise noted with a "\\" on the y-axis.
+            </div><br/>
+            <iframe src="tile_map.html" width="1500" height="550" frameBorder="0"></iframe>
+            <div class="text">
+                Different regions are disproportionately affected by wildfires.
+
+                Western states tend to lose more land to fire on a yearly basis and spend more time fighting fires
+                than their counterparts on the East Coast.  
+                
+                Southern states, on the other hand, have to contend with
+                smaller yet more numerous fires.  
+                
+                While Midwest states seem relatively fire-free in comparison, many
+                of those states, such as Michigan, are still losing upwards of 1,000 acres of land to fire every year.<br/><br/>
+
+                What's more, states like Texas and Washington are observing an <span class="headingHighlight">increase</span>
+                in the amount of land burned away by wildfires every year.  Other states, like Idaho and Oregon,
+                are spending <span class="headingHighlight">more</span> time in recent years to contain fires.<br/><br/>
+
+                How does your home state measure up?
+            </div>
+        </div>
+        <div class="section Final">
+            <div class="resources">
+                  <h2>  How can <span class="headingHighlight">you</span> help?</h2>
+                  <ol>
+                    <li> <h3>Contribute Time and Efforts </h3></br>
+                        <ul> 
+                            <li><a href="https://www.publicservicedegrees.org/how-to-become/volunteer-firefighter/">Volunteer as a Fire Fighter </a> </br></li>
+                            <li><a href="https://www.usfa.fema.gov/training/coffee_break/062420.html">Create a Community Wildfire Protection Plan </a> </br></li>
+                            <li><a href="https://disastersafety.org/wildfire/"> Carry out risk assesments of your homes and communities </a> </br></li>
+                        </ul>
+
+                    </li>
+                    <li> <h3>Contribute Monetary Funds</h3> </br>
+                        <ul>
+                            <li> <a href="https://www.redcross.org/about-us/our-work/disaster-relief/wildfire-relief.html"> Redcross Wildfire Relief Fund </a> </br></li>
+                            <li> <a href="https://www.directrelief.org/emergency/wildfire/"> Direct Relief Wildfire Fund </a> </br></li> 
+                            <li><a href="https://www.calfund.org/"> California Community Foundation </a> </br></li>
+                             
+                        </ul>
+                    </li>
+                    <li> <h3>Educate and Prepare </h3></br>
+                        <ul> 
+                            <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/wildfire.html">American Red Cross Wildfire Safety </a> </br></li>
+                            <li> <a href="https://www.ready.gov/wildfires">Ready.gov</a>  </br></li>
+                            <li><a href="https://www.nfpa.org/Public-Education/Fire-causes-and-risks/Wildfire/Wildfire-safety-tips">National Fire Protection Association </a> </br></li>
+                            <li><a href=" https://www.cdc.gov/disasters/wildfires/index.html">Centers for Disease Control and Prevention</a> </br></li>
+                        </ul>
+                    </li>
+                        
+                  </ol>
+                    
+                </p>
+                           
+            </div>
+            <div class="section Callback">
+                <a href="#begin"> Back to the start </a>
+            </div>
+            <h4> Citations </h4>
+            <div class="citation">
+                <p>
+                    1.  Tatman, Rachael. “1.88 Million US Wildfires.” Kaggle, 12 May 2020, <a href="www.kaggle.com/rtatman/188-million-us-wildfires.">www.kaggle.com/rtatman/188-million-us-wildfires.</a> <br/>
+                    2.  “Statistics.” National Interagency Fire Center, 11 Mar. 2020, <a href="www.nifc.gov/fireInfo/fireInfo_statistics.html">www.nifc.gov/fireInfo/fireInfo_statistics.html</a>.<br/>
+                    3.  “Size Class of Fire.” NWCG, <a href="www.nwcg.gov/term/glossary/size-class-of-fire">www.nwcg.gov/term/glossary/size-class-of-fire</a>.<br/>
+                    4.  “Infographic: Wildfires and Climate Change.” Union of Concerned Scientists, 8 Sept. 2020, <a href="www.ucsusa.org/resources/infographic-wildfires-and-climate-change">www.ucsusa.org/resources/infographic-wildfires-and-climate-change</a>.<br/>
+                    5.  The Measure of Things, <a href="www.bluebulbprojects.com/MeasureOfThings/default.php">www.bluebulbprojects.com/MeasureOfThings/default.php</a>. <br/>
+                    6.  CMSC734 Lab Assigments for D3 code references, <a href="https://gitlab.cs.umd.edu/leozcliu/cmsc734-2020-labs">https://gitlab.cs.umd.edu/leozcliu/cmsc734-2020-labs</a>
+                </p>
+            </div>
+
+            <div id="container">
+
+            </div>
+
+            <script src="main.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

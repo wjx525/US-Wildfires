@@ -1,0 +1,34 @@
+#slider-svg * line.track {
+stroke-opacity: 0.4;
+stroke: #000;
+stroke-width: 10px;
+}
+#slider-svg * line.track-inset {
+stroke: rgb(158, 163, 167);
+stroke-width: 8px;
+}
+#slider-svg * line.track-overlay {
+stroke: #ccc;
+stroke-width: 40px;
+stroke-opacity: 0;
+cursor: crosshair;
+}
+#slider-svg * .handle {
+fill: rgb(16, 35, 71);
+stroke: #000;
+}
+#slider-svg * line.track-overlay, #slider-svg * line.track, #slider-svg * line.track-inset {
+stroke-linecap: round;
+}
+
+.class-boundaries{
+    /* font-family:cursive; */
+    font-size: 16px;
+    color: #B73239;
+    font-weight: bold;
+}
+.xAxis{
+    font-family:cursive;
+    font-size: 16px;
+    font-weight: bold;
+}
