@@ -162,14 +162,14 @@ function dragged(value) {
     var imgsEnter = imgs.enter()
     
     imgsEnter.append("svg:image")
-    .attr("xlink:href", "/data/" + rangeValuesClass[mapping_xVal[xVal]] + ".png")
+    .attr("xlink:href", "data/" + rangeValuesClass[mapping_xVal[xVal]] + ".png")
     .attr("x", "0")
     .attr("y", yLand[mapping_xVal[xVal]])
     .attr("width", 400)
     .attr("height", 400);
     
     imgsEnter.append("svg:image")
-        .attr("xlink:href", "/data/" + fileName[mapping_xVal[xVal]]+ ".png")
+        .attr("xlink:href", "data/" + fileName[mapping_xVal[xVal]]+ ".png")
         .attr("x", xImg[mapping_xVal[xVal]] + 100)
         .attr("y", yImg[mapping_xVal[xVal]])
         .attr("width", widthImg[mapping_xVal[xVal]])
